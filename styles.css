@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('Screenshot\ \(681\).png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile-box{
+    background: #582ed4 ;
+    text-align: center;
+    padding:40px 90px ;
+    color:rgb(255, 255, 255) ;
+    position: relative;
+    border-radius: 20px ;
+    z-index: 1;
+    transition: transform 0.2s ease;
+   background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+   border: 1px solid none;
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0,37) ;
+   
+}
+.profile-box:hover{
+    box-shadow: #fff;
+    transform: scale(1.1);
+}
+.profile-box img{
+    height: 200px;
+    border-radius: 50%;
+    
+}
+.profile-icon{
+    background:#fff ;
+    padding: 6px;
+    box-shadow: #000000;
+    margin-top: 0px;
+}
+.social-media{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+font-size: 10px;
+padding: 6px;
+
+}
+.profile-button{
+       margin-top: 10px;
+       box-shadow: #582ed4;
+       
+}
+.gg-instagram{
+   right:  20px;
+   cursor: pointer;
+   box-shadow: #fff;
+   box-shadow: 20% 20% 20%;
+   transition: transform 0.2s ease;
+}
+.gg-instagram:hover{
+    transform: scale(1.2);
+}
+.gg-figma{
+   left:  20px;
+   cursor: pointer;
+   box-shadow: #fff;
+   box-shadow: 20% 20% 20%;
+   transition: transform 0.2s ease;
+}
+.gg-figma:hover{
+    transform: scale(1.2);
+}
+.gg-google{
+    cursor: pointer;
+    box-shadow: #fff;
+    box-shadow: 20% 20% 20%;
+    transition: transform 0.2s ease;
+}
+.gg-google:hover{
+    transform: scale(1.2);
+}
+.button{
+    cursor: pointer;
+   background: #a42525;
+   position: relative;
+   padding: 10px 22px;
+   border-radius:6px ;
+   color: #fff;
+   border: none;
+   font-size: 18px;
+   font-weight: 400;
+   transition: transform 0.2s ease;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1) ;
+}
+.button:active{
+    transform: scale(0.96);
+}
+.button::before
+.button::after{
+   content: '';
+   position: absolute;
+   left: 50%;
+   transform:translateX(-50%) ;
+   height: 100%;
+   width: 150%;
+  
+}
+.button::before{
+    top: -70%;
+}
+.button::after{
+    bottom:-70% ;
+}
