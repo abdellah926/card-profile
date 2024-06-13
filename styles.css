@@ -24,12 +24,12 @@
     position: relative;
     border-radius: 20px ;
     z-index: 1;
-    transition: transform 0.2s ease;
+    transition: transform 0.5s ease;
    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
    backdrop-filter: blur(10px);
    -webkit-backdrop-filter: blur(10px);
    border: 1px solid none;
-   transform: transition 4s linear;
+   transform: transition 0.5s ease ;
 }
 
 .profile-box:hover{
@@ -72,6 +72,9 @@ padding: 6px;
    box-shadow: 20% 20% 20%;
    transition: transform 0.2s ease;
 }
+.gg-instagram a{
+    text-decoration: none;
+}
 .gg-instagram:hover{
     transform: scale(1.2);
 }
@@ -81,6 +84,10 @@ padding: 6px;
    box-shadow: #fff;
    box-shadow: 20% 20% 20%;
    transition: transform 0.2s ease;
+}
+.gg-figma a{
+    text-decoration: none;
+
 }
 .gg-figma:hover{
     transform: scale(1.2);
