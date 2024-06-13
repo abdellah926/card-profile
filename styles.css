@@ -29,13 +29,16 @@
    backdrop-filter: blur(10px);
    -webkit-backdrop-filter: blur(10px);
    border: 1px solid none;
-   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0,37) ;
-   
+   transform: transition 4s linear;
 }
 
 .profile-box:hover{
     box-shadow: #fff;
     transform: scale(1.1);
+    box-shadow: 0 0px 10px #fff ,
+                   0 0px 10px #fff,
+                   0 0px 10px #fff,
+                   0 0px 10px #fff;
 }
 .profile-box img{
     height: 200px;
