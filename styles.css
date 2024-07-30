@@ -1,14 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nixie+One');
+@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
+   
 }
-
+@media (max-width: 768px) {
+    body {
+         padding: 10px;
+     }
+ }
+ @media (max-width: 768px) {
+     body {
+         padding: 10px;
+     }
+   }
+   @media (min-width: 650px) {
+   
+     :root {
+   
+       /**
+        * typography 
+        */
+   
+       --fs-1: 2.25rem;
+   
+     }
+   
+   
+   
+     /**
+      * REUSED STYLE 
+      */
+   
+     .container { padding: 0 30px; }
+   
+   
+   
+     /**
+      * HEADER 
+      */
+   
+     .navbar { padding: 30px 0; }
+     }
+body{
+    background-image: url("img/5879806925850395501_119.jpg");
+    background-position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;      
+    background-size: cover;
+}
+.titel{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 15px;
+    z-index: 2;
+    text-shadow: 0 0 30px #ff0051, 
+    0 0 10px rgba(255, 0, 55, 0.599), 
+    0 0 100px #ff3a3a, 
+    0 0 500px #ff0000, 
+    5px 9px 5px rgba(0, 0, 0, 0.638);
+    font-family: "Vampiro One", system-ui;
+}
 .container{
     width: 100%;
     height: 100vh;
-   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,29 +79,36 @@
 }
 
 .profile-box{
-    background: #582ed4 ;
     text-align: center;
     padding:40px 90px ;
     color:rgb(255, 255, 255) ;
     position: relative;
-    border-radius: 20px ;
+    border-radius: 30px ;
     z-index: 1;
     transition: transform 0.5s ease;
-   background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
-   backdrop-filter: blur(10px);
-   -webkit-backdrop-filter: blur(10px);
-   border: 1px solid none;
-   transform: transition 0.5sease ;
-  
+   
+     background: linear-gradient(135deg, rgba(199, 199, 199, 0.564),rgba(255, 255, 255, 0.247));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px #00aeff, 
+    0 0 10px rgba(0, 217, 255, 0.599), 
+    0 0 100px #3af8ff, 
+    0 0 500px #2cffbc, 
+    5px 9px 5px rgba(0, 0, 0, 0.5);
+    transform: transition 0.5sease ;
+    border: 5px solid rgb(255, 255, 255);
+}
+.profile-box h3{
+  font-family: "Vampiro One", system-ui;
 }
 
 .profile-box:hover{
-    box-shadow: #fff;
     transform: scale(1.1);
-    box-shadow: 0 0px 10px #fff ,
-                   0 0px 10px #fff,
-                   0 0px 10px #fff,
-                   0 0px 10px #fff;
+    box-shadow: 0 0 30px #00d9ff, 
+    0 0 10px rgba(0, 217, 255, 0.599), 
+    0 0 100px #3af8ff, 
+    0 0 500px #2cffbc, 
+    5px 9px 5px rgba(0, 0, 0, 0.5);
 }
 .profile-box img{
     height: 200px;
@@ -78,7 +148,7 @@ padding: 6px;
 }
 .gg-instagram:hover{
     color: #a42525;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .gg-figma{
    left:  20px;

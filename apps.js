@@ -4,5 +4,5 @@ document.addEventListener('mousemove',function(profile){
     let dy = profile.pageY - window.innerHeight / 2
     let angleX = 40 * dx / window.innerWidth / 2
     let angleY = 40 * dy / window.innerHeight / 2
-    block.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`       
+    profile.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`       
 })
